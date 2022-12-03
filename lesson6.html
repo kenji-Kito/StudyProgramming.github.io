@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="#" class="logo">Asu<span>ra</span></a>
+        <!-- Login Btn -->
+        <a href="sign-up.html" class="login">Login</a>
+    </div>
+
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">The Programming Blog</h2>
+            <span class="home-subtitle">Your source of great content</span>
+        </div>
+    </section>
+   <section class="Chapter">
+       <h2>How to check the Python Version on Windows, Mac, Linux, Script, Command Line</h2>
+       <p class="post-text1">Here are methods to check Python Version</p>
+       <img src="img/python.png" alt="/" class="pic">
+       <table>
+        <tbody>
+            <tr>
+                <th>Commands</th>
+                <th>Where</th>  
+                <th>What</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td>python –version</td>
+                <td>Command</td>
+                <td>Windows/Mac/Linux</td>
+                <td>Python 3.10.7</td>
+            </tr>
+            <tr>
+                <td>python -v</td>
+                <td>line or</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>python -vv</td>
+                <td>Terminal</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Import sys<br>
+                    sys. version</td>
+                    <td>Script</td>
+                    <td>	Use as string</td>
+                    <td>‘3.10.7 (tags/v3.10.7:6cc6b13, Sep 5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]’</td>
+            </tr>
+            <tr>
+                <td>Import platform<br>
+                    Platform.python_version()</td>
+                    <td>Script</td>
+                    <td>String of short format</td>
+                    <td>‘3.10.7’</td>
+            </tr>
+            <tr>
+                <td>Platform.python_version_tuple()</td>
+                <td>Script</td>
+                <td>Tuple of short format</td>
+                <td>(‘3’,’10’,’7’)</td>
+            </tr>
+        </tbody>
+       </table>
+       <h2>How to check the Python version using a script?</h2>
+       <p class="post-text1">Python scripts can identify the version of Python installed on the computer. It enables you to validate if multiple versions are installed in the system. The script developed to check the Python version remains the same for windows OS, Mac OS, and Linux distributions. You can create a script by importing either the platform module or sys module of python.</p>
+       <p class="post-text1">The following code can be used for the sys module as shown below:</p>
+       <p class="post-text1"><strong>Command line Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>import sys
+                sys. version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><Strong>Output:</Strong></p>
+       <div>
+        <pre class="code">
+            <p>'3.10.7 (tags/v3.10.7:6cc6b13, Sep 5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]'</p>
+        </pre>
+       </div>
+       <p class="post-text1">Refer to the following command line screenshot:</p>
+       <img src="python6/1.png" alt="/" class="pic1">
+       <p class="post-text1">To execute the above script, invoke python first in the command line to get the above results.</p>
+       <p class="post-text1">The following code can be used for the sys module as shown below:</p>
+       <p class="post-text1"><strong>Command line Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>import platform
+                print(platform.python_version())</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1">Refer to the following command line screenshot:</p>
+       <img src="python6/2.png" alt="#" class="pic1">
+       <p class="post-text1">Use the following code in the web-based interpreter as shown below: –</p>
+       <p class="post-text1">Python code:</p>
+       <div>
+        <pre class="code">
+            <p>
+                from platform import python_version
+                print("Current Python Version-", python_version())
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Current Python Version- 3.8.10</p>
+        </pre>
+       </div>
+       <p class="post-text1">Refer to the following web-based interpreter screenshot:</p>
+       <img src="python6/3.png" alt="/" class="pic1">
+       <p class="post-text1">To get the information on the version of python, use the following script as shown below:</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(sys.version_info)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Sys.version_info(major=3, minor=10,micro=7,releaselevel=’final’,serial=0)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot:</strong></p>
+       <img src="python6/4.png" alt="" class="pic1">
+       <p class="post-text1">To get the tuple information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1">Python command:</p>
+       <div>
+        <pre class="code">
+            <p>
+                print(type(sys.version_info))
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>
+                class ‘sys.version_info’></class>
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/5.png" alt="\" class="pic1">
+       <p class="post-text1">To get the major information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(sys.version_info[0])</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output</strong></p>
+       <div>
+        <pre class="code">
+            <p>3</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot:</strong></p>
+       <img src="python6/6.png" alt="/" class="pic1">
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(sys.version_info.major)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>3</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/7.png" alt="/" class="pic1">
+       <p class="post-text1">To get the major information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Import platform
+                print(platform.python_version())</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/8.png" alt="/" class="pic1">
+       <p class="post-text1">To get the major information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(type(platform.python_version()))</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>class ‘str’></p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/9.png" alt="/" class="pic1">
+       <p class="post-text1">To get the major information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(platform.python_version_tuple())</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>(‘3’,’7’,’0’)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/10.png" alt="/" class="pic1">
+       <p class="post-text1">To get the major information on the version of python, use the following script as shown below: –</p>
+       <p class="post-text1"><strong>Python command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print(type(platform.python_version_tuple())</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>class ‘tuple’></p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/11.png" alt="/" class="pic1">
+       <h2>How to check the Python version using Windows Command Line?</h2>
+       <p class="post-text1">Here are steps to check the Python version using Windows Command Line:</p>
+       <p class="post-text1"><strong> step1) </strong>Open the command prompt by typing cmd</p>
+       <p class="post-text1"><strong> step2) </strong> When the command prompt opens, type the following command in the CLI to get the version name of Python.</p>
+       <p class="post-text1"><strong>Command code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Note: </strong>Before running the command, ensure that Python is pre-installed on the computer.</p>
+       <p class="post-text1">Alternatively, open a command line and type the below command:</p>
+       <p class="post-text1"><strong>Command code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1">Refer to the below screenshot for the results executed in the command prompt:</p>
+       <p class="post-text1"><strong>Screenshot</strong></p>
+       <img src="python6/12.png" alt="/" class="pic1">
+       <h2>How to check the python version using windows PowerShell?</h2>
+       <p class="post-text1">To check the Python version in Windows PowerShell:</p>
+       <ul class="list">
+        <li>> <p> Open the power shell prompt by typing PowerShell in the start menu and clicking on Windows PowerShell.</p></li>
+        <li>> <p> The user must type the following command in PowerShell to obtain the Python version name.</p></li>
+       </ul>
+       <img src="python6/13.png" alt="/" class="pic1">
+       <p class="post-text1">However, before running this command, ensure that Python is pre-installed on the computer.</p>
+       <p class="post-text1">Following is the command typed in the command line:</p>
+       <p class="post-text1"><strong>PowerShell code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1">Alternatively, open a command line and type the below command:</p>
+       <p class="post-text1"><strong>PowerShell code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.10.7</p>
+        </pre>
+       </div>
+       <p class="post-text1">See this screenshot for the results executed in the command prompt:</p>
+       <img src="python6/14.png" alt="" class="pic1">
+       <h2>How to check the Python Version in Linux?</h2>
+       <p class="post-text1">Here are steps to check the Python Version in Linux:</p>
+       <p class="post-text1"><strong>Step 1)</strong> To check the Python version in Linux, open the Terminal</p>
+       <p class="post-text1"><strong>Step 2)</strong> This opens the below window as shown below:</p>
+       <img src="python6/15.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Step 3)</strong> Type the below command in the Terminal of Linux to get the version name of Python.</p>
+       <p class="post-text1">Following is the command typed in the Terminal:</p>
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.5.2</p>
+        </pre>
+       </div>
+       <p class="post-text1">Alternatively, open the Terminal and type the below command:</p>
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python--version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 2.7.12</p>
+        </pre>
+       </div>
+       <p class="post-text1">The above command helps the user check whether python 2 is installed in the system. Refer to the below screenshot for the results executed in the Linux terminal:</p>
+       <p class="post-text1"><strong>Screenshot:</strong></p>
+       <img src="python6/16.png" alt="" class="pic1">
+       <p class="post-text1">Ensure that Python is pre-installed on the operating system of the computer. Most advanced versions of Linux distributions, such as Ubuntu and Fedora, have Python pre-installed in it.</p>
+       <p class="post-text1">Alternatively, the following commands can be used in the Linux terminal to get the version name of the Python installed in the distribution as listed below: –</p>
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python -VV</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 2.7.12</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot: –</strong></p>
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python3 -c “import sys; print(sys. version).”</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>3.5.2(default, Nov 12 2018, 13:43:14)
+
+                [GCC 5.4.0 20160609]</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot: –</strong></p>
+       <img src="python6/17.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python3 -c “import sys; print(sys.version_info)”</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>sys.version_info(major=3,minor=2,releaselevel=’final’,serial=0)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot: –</strong></p>
+       <img src="python6/18.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Linux Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python3 -c “import platform; print(platform.python_version())”</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>3.5.2</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Screenshot: –</strong></p>
+       <img src="python6/19.png" alt="" class="pic1">
+       <p class="post-text1">The only difference in the above commands is the use of python modules. This module provides names for variables and functions that are used to manipulate different parts of the Python environment. The module gets underlying platform data such as operating system, hardware, and interpreter.</p>
+       <h2>How to check the Python version on Mac?</h2>
+       <p class="post-text1">Here are steps to check the Python version:</p>
+       <p class="post-text1"><strong>Step 1)</strong> To check the Python version in Mac OS</p>
+       <p class="pot-text1">Open the Terminal by typing the terminal command in the search box in the top right corner of the Mac OS desktop menu and click on it.</p>
+       <p class="post-text1"><strong>Step 2)</strong> his opens the below window as shown below:</p>
+       <img src="python6/20.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Step 3)</strong>  To obtain the Python version name, you need to use the following command in the Terminal window.</p>
+       <p class="post-text1"><strong>Note:</strong> However, before running the command, ensure that Python is pre-installed on the computer. Most advanced versions of Mac OS distributions have Python pre-installed in it.</p>
+       <p class="post-text1">Following is the command typed in the Terminal:</p>
+       <p class="post-text1"><strong>Mac OS Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 3.3.1</p>
+        </pre>
+       </div>
+       <p class="post-text1">Alternatively, open the Terminal and type the below command:</p>
+       <p class="post-text1"><strong>Mac OS Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python --version</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python 2.7.4</p>
+        </pre>
+       </div>
+       <p class="post-text1">The above command helps the user check whether python 2 is installed in the system.</p>
+       <p class="post-text1">Refer to the below screenshot for the results executed in the Mac OS terminal:</p>
+       <p class="post-text1"><strong>Screenshot:</strong></p>
+       <img src="python6/21.png" alt="" class="pic1">
+       <h2>How to check Multiple python versions installed in the same system?</h2>
+       <p class="post-text1">There can be multiple Python versions installed on the computer system. Therefore, a computer can have both versions 2 and 3 installed.</p>
+       <p class="post-text1">To validate both versions, the user can open the command line and type in the following commands:</p>
+       <h2>Scenario 1: To check Python version 2</h2>
+       <p class="post-text1"><strong>Command Line \ Terminal code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python --version</p>
+        </pre>
+       </div>
+       <h2>Scenario 2: To check Python version 3</h2>
+       <p class="post-text1"><strong>OS Command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 --version</p>
+        </pre>
+       </div>
+       <P class="post-text1"><strong>Python 2 or Python 3</strong></P>
+       <p class="post-text1">Here are comparisons of both versions:</p>
+       <ul class="list">
+        <li>>  Python version 3, compared to Python version 2 is different in terms of syntax. Here is a complete comparison between the 2 versions.
+        </li>
+        <li>>  Python 3 contains a couple of utilities that help translate code written in Python 2 to Python 3.</li>
+        <li>>  Python version 3 has a different syntax from Python version 2 because Python versions 2 and 3 have different syntaxes.</li>
+        <li>>  Python 2 is not releasing any new updates, which makes this version incompatible with version 3.</li>
+        <li>>  Some features of Python 3 were backported to Python 2, and this was done to support easy migration.</li>
+        <li>>  version 2, it must be defined with the keyword “u”.</li>
+       </ul>
+       <p class="post-text1"><strong>Conclusion:</strong></p>
+       <ul class="list">
+        <li>>  Python version 2 and python version 3 have different syntax</li>
+        <li>>  The Python version can be checked in several ways as</li>
+        <li>>  Using Windows PowerShell</li>
+        <li>>  In the Windows command line.</li>
+        <li>>  Terminal of Mac OS and Linux</li>
+        <li>>  Using Python scripts.</li>
+        <li>>  The version of Python can be checked by typing Python –version command.</li>
+        <li>>  To validate the installation of the Python 3 version, type the command python 3 –version in the respective OS command lines.</li>
+       </ul>
+       <h2>FAQ:</h2>
+       <h2>❓ How do open command lines in different Operating systems?</h2>
+       <p class="post-text1">The coder can execute a single command to identify which version is installed in your computer’s operating system. You can do this by opening the command line of the operating system and typing below command as shown below:</p>
+       <ul class="list">
+        <li>>  <strong>Linux:</strong> Ctrl + Alt + T or Ctrl + Alt + F2</li>
+        <li>>  <strong>Windows:</strong> Win + R</li>
+        <li>>  <strong>Mac OS:</strong> Finder > Applications > Utilities > Terminal</li>
+       </ul>
+       <h2>🏅 Perquisites for the system before Checking the Version</h2>
+       <p class="post-text1">Here are important Perquisites for the system before checking the version:</p>
+       <ul class="list">
+        <li>>  The user should access the command line.</li>
+        <li>>  They should install the latest version of Python beforehand.</li>
+        <li>>  It is also advisable to install any latest minor version of version 3 of Python. 1</li>
+        <li>>  In order to validate the installed version, the user can open a command line after the installation. It is also called the Terminal in some operating systems, such as Linux and Mac OS.</li>
+
+       </ul>
+    </section>
+   <div class="share post-container">
+    <span class="share-title">Share this article</span>
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+    
+</div>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; ASURA 2022 All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

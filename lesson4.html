@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="#" class="logo">Asu<span>ra</span></a>
+        <!-- Login Btn -->
+        <a href="sign-up.html" class="login">Login</a>
+    </div>
+
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">The Programming Blog</h2>
+            <span class="home-subtitle">Your source of great content</span>
+        </div>
+    </section>
+   <section class="Chapter">
+    <h2>Python Variables: How to Define/Declare String Variable Types</h2>
+    <p class="post-text1"><strong>What is a Variable in Python?</strong></p>
+    <p class="post-text1">A Python variable is a reserved memory location to store values. In other words, a variable in a python program gives data to the computer for processing.</p>
+    <p class="post-text1"><strong>Python Variable Types</strong></p>
+    <p class="post-text1">Every value in Python has a datatype. Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc. Variables in Python can be declared by any name or even alphabets like a, aa, abc, etc. </p>
+    <p class="post-text1"><strong>In this tutorial, we will learn :</strong></p>
+    <ul class="list">
+        <li>> How to declare and use variable </li>
+        <li>> Re-declare a Variable</li>
+        <li>> Concatenate Variables</li>
+        <li>> Local & Global Variables</li>
+        <li>> Delete a variable</li>
+    </ul>
+    <h2>How to Declare and use a Variable</h2>
+    <p class="post-text1">Let see an example. We will define variable in Python and declare it as “a” and print it.</p>
+    <div>
+        <pre class="code">
+            <p>
+        a=100 
+        print (a)
+            </p>
+        </pre>
+    </div>
+    <h2>Re-declare a Variable</h2>
+    <p class="post-text1">You can re-declare Python variables even after you have declared once.</p>
+    <p class="post-text1">Here we have Python declare variable initialized to f=0.</p>
+    <p class="post-text1">Later, we re-assign the variable f to value “Asura”</p>
+    <p class="post-text1"><strong>Python 2 Example</strong></p>
+    <div>
+        <pre class="code">
+            <p>
+                # Declare a variable and initialize it
+                f = 0
+                print f
+                # re-declaring the variable works
+                f = 'Asura'
+                print f
+            </p>
+        </pre>
+    </div>
+    <p class="post-text1"><strong>Python 3 Example</strong></p>
+    <div>
+        <pre class="code">
+            <p>
+                # Declare a variable and initialize it
+                f = 0
+                print f
+                # re-declaring the variable works
+                f = 'Asura'
+                print f
+            </p>
+        </pre>
+    </div>
+    <h2>Python String Concatenation and Variable</h2>
+    <p class="post-text1">Let’s see whether you can concatenate different data types like string and number together. For example, we will concatenate “Asura” with the number “168”.</p>
+    <p class="post-text1">Unlike Java, which concatenates number with string without declaring number as string, while declaring variables in Python requires declaring the number as string otherwise it will show a TypeError</p>
+    <p class="post-text1">For the following code, you will get undefined output –</p>
+    <div>
+        <pre class="code">
+            <p>
+                a="Asura"
+                b= 168
+                print a+b
+            </p>
+        </pre>
+    </div>
+    <p class="post-text1">Once the integer is declared as string, it can concatenate both “Guru” + str(“99”)= “Guru99” in the output.</p>
+    <div>
+        <pre class="code">
+            <p>
+                a="Asura"
+                b= 168
+                print (a + str(b))
+            </p>
+        </pre>
+    </div>
+    <h2>Python Variable Types: Local & Global.</h2>
+    <p class="post-text1">There are two types of variables in Python, Global variable and Local variable. When you want to use the same variable for rest of your program or module you declare it as a global variable, while if you want to use the variable in a specific function or method, you use a local variable while Python variable declaration.</p>
+    <p class="post-text1">Let’s understand this Python variable types with the difference between local and global variables in the below program.</p>
+    <ul class="list">
+        <li>1. Let us define variable in Python where the variable “f” is global in scope and is assigned value 101 which is printed in output.</li>
+        <li>2. Variable f is again declared in function and assumes local scope. It is assigned value “I am learning Python.” which is printed out as an output. This Python declare variable is different from the global variable “f” defined earlier</li>
+        <li>3. Once the function call is over, the local variable f is destroyed. At line 12, when we again, print the value of “f” is it displays the value of global variable f=101</li>
+
+    </ul>
+    <p class="post-text1"><strong>Python 2 Example</strong></p>
+    <div>
+        <pre class="code">
+            <p>
+                # Declare a variable and initialize it
+                f = 101
+                print f
+                # Global vs. local variables in functions
+                def someFunction():
+                # global f
+                    f = 'I am learning Python'
+                    print f
+                someFunction()
+                print f
+            </p>
+        </pre>
+    </div>
+    <p class="post-text1"><strong>Python 3 Example</strong></p>
+    <div>
+        <pre class="code">
+            <p>
+                # Declare a variable and initialize it
+                f = 101
+                print(f)
+                # Global vs. local variables in functions
+                def someFunction():
+                # global f
+                    f = 'I am learning Python'
+                    print(f)
+                someFunction()
+                print(f)
+            </p>
+        </pre>
+    </div>
+    <p class="post-text1">While Python variable declaration using the keyword global, you can reference the global variable inside a function.</p>
+    <ul class="list">
+        <li>1. Variable “f” is global in scope and is assigned value 101 which is printed in output</li>
+        <li>2 Variable f is declared using the keyword global. This is NOT a local variable, but the same global variable declared earlier. Hence when we print its value, the output is 101</li>
+        <li>3. We changed the value of “f” inside the function. Once the function call is over, the changed value of the variable “f” persists. At line 12, when we again, print the value of “f” is it displays the value “changing global variable”</li>
+    </ul>
+        <p class="post-text1"><strong>Python 2 Example</strong></p>
+        <div>
+            <pre class="code">
+                <p>
+                    f = 101;
+                    print f
+                    # Global vs.local variables in functions
+                    def someFunction():
+                    global f
+                    print f
+                    f = "changing global variable"
+                    someFunction()
+                    print f
+                </p>
+            </pre>
+        </div>
+        <p class="post-text1"><strong>Python 3 Example</strong></p>
+        <div>
+            <pre class="code">
+                <p>
+                    f = 101;
+                    print(f)
+                    # Global vs.local variables in functions
+                    def someFunction():
+                      global f
+                      print(f)
+                      f = "changing global variable"
+                    someFunction()
+                    print(f)
+                </p>
+            </pre>
+        </div>
+        <h2>Delete a variable</h2>
+        <p class="post-text1">You can also delete Python variables using the command del “variable name”.</p>
+        <p class="post-text1">In the below example of Python delete variable, we deleted variable f, and when we proceed to print it, we get error “variable name is not defined” which means you have deleted the variable.</p>
+        <p class="post-text1"><strong>Example of Python delete variable or Python clear variable :</strong></p>
+        <div>
+            <pre class="code">
+                <p>
+                    f = 11;
+                    print(f)
+                    del f
+                    print(f)
+                </p>
+            </pre>
+        </div>
+        <p class="post-text1"><strong>Summary :</strong></p>
+        <ul class="list">
+            <li>> Variables are referred to “envelop” or “buckets” where information can be maintained and referenced. Like any other programming language Python also uses a variable to store the information.</li>
+            <li>> Variables can be declared by any name or even alphabets like a, aa, abc, etc.</li>
+            <li>> Variables can be re-declared even after you have declared them for once</li>
+            <li>> Python constants can be understood as types of variables that hold the value which can not be changed. Usually Python constants are referenced from other files. Python define constant is declared in a new or separate file which contains functions, modules, etc.
+            </li>
+            <li>> Types of variables in Python or Python variable types : Local & Global</li>
+            <li>> Declare local variable when you want to use it for current function</li>
+            <li>> Declare Global variable when you want to use the same variable for rest of the program</li>
+            <li>> To delete a variable, it uses keyword “del”.</li>
+        </ul>
+    </section>
+   <div class="share post-container">
+    <span class="share-title">Share this article</span>
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+    
+</div>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; ASURA 2022 All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="#" class="logo">Asu<span>ra</span></a>
+        <!-- Login Btn -->
+        <a href="sign-up.html" class="login">Login</a>
+    </div>
+
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">The Programming Blog</h2>
+            <span class="home-subtitle">Your source of great content</span>
+        </div>
+    </section>
+   <section class="Chapter">
+       <h2>How to Run Python Scripts: Step by Step Guide</h2>
+       <h2>What is the Script in Python?</h2>
+       <p class="post-text1">A script in Python can be defined as a file that consists of Python code or a program. It ends with an extension as .py</p>
+       <p class="post-text1">An interpreter can execute a script in two distinct ways, as listed below: –</p>
+       <p class="post-text1">>> A script can be executed as a module or as a script itself.</p>
+       <p class="post-text1">>> A code that is written in an interactive Python command prompt session manner.</p>
+       <h2>How to run Python code and scripts interactively?</h2>
+       <p class="post-text1">Here are steps to do this:</p>
+       <p class="post-text1"><strong> Step 1)</strong> The programmer must open the command line in the interactive mode.</p>
+       <p class="post-text1"><strong> Step 2)</strong>  In the next step, invoke the python interpreter in the command line by typing the following command: –</p>
+       <p class="post-text1"><strong>Command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong> Step 3)</strong> The programmer can sequentially write Python code and execute them in the same order.</p>
+       <p class="post-text1">The following program can be typed in the command line as shown below:</p>
+       <p class="post-text1"><strong>Example: –</strong></p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python
+                print ('hello world')</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>hello world</p>
+        </pre>
+       </div>
+       <p class="post-text1">Let us take another Python code that could be written in the command line interactively.</p>
+       <p class="post-text1"><strong>Example: –</strong></p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python
+                a=25
+                b=50
+                 if a > b:
+                ...    print ("a is more than b")
+                ... else:
+                ...    print ("b is more than a")
+                ...
+                b is more than a
+                >>></p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>b is more than a</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Following is the screenshot: –</strong></p>
+       <img src="python7/Screenshot 2022-11-29 165153.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The above code compares two arguments and finds which argument is greater. Ensure the statements are properly indented to avoid indentation errors. To exit the windows commanded line, press Ctrl+Z and follow with an Enter.</p>
+       <h2>How to run Python script files interactively from Windows GUI?</h2>
+       <p class="post-text1">Here are steps to do this:</p>
+       <p class="post-text1"><strong> Step 1)</strong>  Open the command line and type the Python command followed by the script file name.</p>
+       <p class="post-text1"><strong> Step 2)</strong> Ensure that the script file is already created.</p>
+       <p class="post-text1"><strong> Step 3)</strong> The script file should end with either .py or. pyw. As a next step, open the Windows command prompt.</p>
+       <p class="post-text1">Following would be the code to be written in the command line to invoke a Python script:</p>
+       <p class="post-text1"><strong>Python Command line Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python example.py</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Hello, world!</p>
+        </pre>
+       </div>
+       <h2>How to run Python scripts from an IDE</h2>
+       <p class="post-text1">An integrated development environment is also referred to as IDE in short form. It offers a virtual setup of file and folder hierarchy. It allows the programmer to build Python projects quickly. IDE provides the organization of files into different folders.</p>
+       <p class="post-text1">These different folders belong to one common directory.</p>
+       <p class="post-text1">Spyder and PyCharm are two Python IDEs that enable the programmer to run Python programs.</p>
+       <p class="post-text1">Let us take an example of executing a Python script in PyCharm IDE:</p>
+       <p class="post-text1"><strong> Step 1)</strong>  As the first step, create a new project in PyCharm. </p>
+       <p class="post-text1"><strong> Step 2)</strong>  Name the project as Guru99Example and then click create.</p>
+       <p class="post-text1"><strong> Step 3)</strong>  Select the Root folder that would be labeled as Guru99Example and do a right click.</p>
+       <p class="post-text1"><strong> Step 4)</strong>  Go to the new option and create a new Python file.</p>
+       <p class="post-text1"><strong> Step 5)</strong>  Give the name of the Python file Here we have given Guru99Example.</p>
+       <p class="post-text1"><strong> Step 6)</strong>   In the blank Python file created in PyCharm IDE, write the following piece of code as shown below: –</p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print ('hello world')</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong> Step 7)</strong>   To run the above code, right-click on the editor and select the option <strong>“Run File in Python console”</strong>.</p>
+       <p class="post-text1">This code will open the console window within IDE, and the following would be the output:</p>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>PyDev console: starting.
+                Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)] on win32
+                >>> runfile('C:/Users/OS Name/PycharmProjects/ASURA/Example.py', wdir='C:/Users/OS Name/PycharmProjects/Example')
+                hello world</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Following is the Screenshot:</strong></p>
+       <img src="python7/2.png" alt="" class="pic1">
+       <img src="python7/3.png" alt="" class="pic1">
+       <img src="python7/4.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The above code is a simple example of how to print hello world in the PyCharm IDE.</p>
+       <h2>How to run Python scripts using a file manager?</h2>
+       <p class="post-text1">Here are the steps to run the Python script using file manager:</p>
+       <p class="post-text1"><strong> Step 1)</strong>  Open Notepad and add some Python code. </p>
+       <p class="post-text1"><strong> Step 2)</strong>  Type print (‘Hello World’) </p>
+       <p class="post-text1"><strong> Step 3)</strong>   Save the script file with extension as either .py or. pyw. </p>
+       <p class="post-text1"><strong> Step 4)</strong>  .py extension file is used for programs that have Python.exe. </p>
+       <p class="post-text1"><strong> Step 5)</strong>   In the windows operating system, right-click the Python file and click open. Refer to the below </p>
+       <p class="post-text1"><strong>screenshot: –</strong></p>
+       <img src="python7/5.png" alt="" class="pic1">
+       <p class="post-text1">When executed, it opens a command line screen for a moment. Refer to the below screenshot: –</p>
+       <p class="post-text1">To ensure the screen remains for a while, add the following statement in the Python script file as shown below: –</p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>input ('Press provide enter to exit...') </p>
+        </pre>
+       </div>
+       <p class="post-text1">Until and unless there is no input from the user, the screen continues to run and display Python output.</p>
+       <p class="post-text1">However, if the Python script has some error, the execution of the input command is interrupted or aborted. Due to this, the user may not be able to see Python script execution using file manager.</p>
+       <p class="post-text1"><strong>screenshot: –</strong></p>
+       <img src="python7/6.png" alt="" class="pic1">
+       <h2>How to run Python scripts using script file name and command line?</h2>
+       <p class="post-text1">Here are the steps to run the Python script using script file name and command line:</p>
+       <p class="post-text1"><strong> Step 1)</strong>  Open Notepad and add some Python code. </p>
+       <p class="post-text1"><strong> Step 2)</strong>  Type print (‘Hello World’) </p>
+       <p class="post-text1"><strong> Step 3)</strong>  Save the script file with extension as either .py or. pyw. </p>
+       <p class="post-text1"><strong> Step 4)</strong>  .py extension file is used for programs that have Python.exe. </p>
+       <p class="post-text1"><strong> Step 5)</strong>  In the windows operating system, right-click the Python file and click copy as the path. Refer to the below </p>
+       <p class="post-text1"><strong>screenshot: –</strong></p>
+       <img src="python7/7.png" alt="" class="pic1">
+       <p class="post-text1">It helps to validate the path of the script file with the command line path. Open a command line and type the script file name as created above with the name followed by the extension .py. Refer to the below <strong>screenshot: –</strong></p>
+       <img src="python7/8.png" alt="" class="pic1">
+       <p class="post-text1">Alternatively, the script file created above can be run as a python module. Type the following command as <strong>shown below: –</strong></p>
+       <p class="post-text1"><strong>Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python -m example</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>hello world
+                Press provides enter to exit... </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Refer to the following screenshot:</strong></p>
+       <img src="python7/9.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The above code follows the following syntax:</p>
+       <p class="post-text1"><strong>Syntax:</strong></p>
+       <div>
+        <pre class="code">
+            <p>Python -m  </p>
+        </pre>
+       </div>
+       <p class="post-text1">The above -m parameter searches for the sys. Path for the module referred to and executed the code as part of the _main_.</p>
+       <h2>How to run Python Scripts on Linux</h2>
+       <p class="post-text1">Here are steps to do this:</p>
+       <p class="post-text1"><strong> Step 1)</strong>  The programmer must open the Linux terminal in the interactive mode. </p>
+       <p class="post-text1"><strong> Step 2)</strong>  In the next step, invoke the Python interpreter in the Linux terminal by typing the following command: – </p>
+       <p class="post-text1"><strong>Command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3  </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong> Step 3)</strong>  The programmer can sequentially write Python code and execute them in the same order. </p>
+       <p class="post-text1">The following program can be typed in the command line as shown below:</p>
+       <p class="post-text1"><strong>Example: –</strong></p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3
+                a=25
+                b=50
+                 if a > b:
+                ...    print ("a is more than b")
+                ... else:
+                ...    print ("b is more than a")
+                ...
+                b is more than a
+                >>></p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>b is more than a</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Following is the screenshot: –</strong></p>
+       <img src="python7/10.png" alt="" class="pic1">
+       <p class="post-text1">Alternatively, Here are the steps to run the Python script file using a Linux terminal:</p>
+       <p class="post-text1"><strong> Step 1)</strong>   Open the text editor and add some Python code. </p>
+       <p class="post-text1"><strong> Step 1)</strong>  Type print (‘Hello World’) </p>
+       <p class="post-text1"><strong> Step 1)</strong>  Save the script file with extension as.py. </p>
+       <p class="post-text1"><strong> Step 1)</strong>   .py extension file is used for programs that have Python.exe. </p>
+       <p class="post-text1"><strong> Step 1)</strong>   In the next step, invoke the Python interpreter in the Linux terminal by typing the following command: – </p>
+       <p class="post-text1"><strong>Command:</strong></p>
+       <div>
+        <pre class="code">
+            <p>python3 /home/onworks/Desktop/Example.py </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output:</strong></p>
+       <div>
+        <pre class="code">
+            <p>hello world</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Following is the screenshot: –</strong></p>
+       <img src="python7/11.png" alt="" class="pic1">
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The python interpreter in the Linux terminal runs the script file that is saved at the desktop location.</p>
+       <h2>Comparison of code, module, and script in Python</h2>
+       <p class="post-text1">In the world of computing, the following is the comparison between module, code, and script:</p>
+       <table>
+        <tbody>
+            <tr>
+                <th>Parameters</th>
+                <th>Code</th>
+                <th>Module</th>
+                <th>Script</th>
+            </tr>
+            <tr>
+                <td>Definition</td>
+                <td>A code is defined as a series of instructions.</td>
+                <td>A module is defined as a series of codes arranged sequentially.</td>
+                <td>A script can be defined as a file that comprises logical orders or a batch of organized codes.</td>
+            </tr>
+            <tr>
+                <td>Executability</td>
+                <td>They are run through the Python interpreter</td>
+                <td>They are imported first in a script or a piece of code and then executed using the Python interpreter</td>
+                <td>The scripts are generally run through a Python interpreter.</td>
+            </tr>
+        </tbody>
+       </table>
+       <h2>FAQ</h2>
+       <h2>❓ What is Python Interpreter?</h2>
+       <p class="post-text1">A Python interpreter can be considered an interface or a bridge that helps execute code or a script. It runs the code in two manners:</p>
+       <ul class="list">
+        <li>>>  It invokes a script or a module.</li>
+        <li>>>  It invokes a code written in an active session.</li>
+       </ul>
+       <p class="post-text1">Python interpreter works in the following manner: –</p>
+       <ul class="list">
+        <li>>>  It reads the command followed by its evaluation.</li>
+        <li>>>  Post evaluation, it prints the results of the command.</li>
+        <li>>>  It loops backward and performs the repetition of the process.</li>
+       </ul>
+       <h2>🏅 Types of Python Interpreters</h2>
+       <p class="post-text1">A Python interpreter is available in several forms, as listed below:</p>
+       <table>
+        <tbody>
+            <tr>
+                <th>Interpreter</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Jython</td>
+                <td>Using Java programming language, Python programs can be run on java-based platforms.</td>
+            </tr>
+            <tr>
+                <td>PyPy</td>
+                <td>Interpreter designed in a Python programming language.</td>
+            </tr>
+            <tr>
+                <td>CPython</td>
+                <td>Interpreter designed using C language to run and execute Python programs in C-based platforms</td>
+            </tr>
+            <tr>
+                <td>IronPython</td>
+                <td>It is an open-source project which used as an interpreter for .Net platforms.</td>
+            </tr>
+        </tbody>
+       </table>
+       <h2>⚡ How does the Python interpreter execute scripts?</h2>
+       <p class="post-text1">The Python script is run under the multi-step process defined as Python Execution Model. Under this model, the statements defined in the script are processed and executed step-by-step.</p>
+       <p class="post-text1">In the last step of the execution process, the Python virtual machine loads the bytecode in the run time to execute the script.</p>
+       <h2>🌟 What Do you Need to Run a Python Script?</h2>
+       <p class="post-text1">Following are the basic requirements needed to execute a Python Script:</p>
+       <ul class="list">
+        <li>>>  Make the Python script executable and install the interpreter beforehand on the computer.</li>
+        <li>>>  You should have a code editor or an integrated development environment pre-installed in the computer’s operating system.</li>
+        <li>>>  Add Python beforehand to execute code through the command line to the operating system environment variable.</li>
+       </ul>
+       <p class="post-text1"><strong>Conclusion:</strong></p>
+       <ul class="list">
+        <li>>>  A Python script can be executed using several methods.</li>
+        <li>>>  You can execute using the command line or using IDE.</li>
+        <li>>>  The programmer can use PyCharm and Spyder IDE to develop sophisticated Python scripts.</li>
+        <li>>>  Ensure that the code adheres to indentation when using the if and else statements in the command line.</li>
+       </ul>
+    </section>
+    
+   <div class="share post-container">
+    <span class="share-title">Share this article</span>
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+    
+</div>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; ASURA 2022 All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

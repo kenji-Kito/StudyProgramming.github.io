@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">Asu<span>ra</span></a>
+        <!-- Login Btn -->
+        <a href="#" class="login">Login</a>
+    </div>
+
+    </header>
+    <!-- Post Content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!-- Back To Home -->
+            <a href="index.html" class="back-home">Back To Home</a>
+            <!-- Title -->
+            <h1 class="header-title">What is C++ ?</h1>
+            <!-- Post Image -->
+            <img src="img/project-5.jpg" alt="" class="header-img">
+        </div>
+    </section>
+    
+    
+   
+    <!-- Posts -->
+    <section class="post-content post-container">
+        <h2>What is JavaScript?</h2>
+        <p class="post-text">JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.</p>
+        <p class="post-text">Many browsers use JavaScript as a scripting language for doing dynamic things on the web. Any time you see a click-to-show dropdown menu, extra content added to a page, and dynamically changing element colors on a page, to name a few features, you're seeing the effects of JavaScript.</p>
+        <h2>What Would the Web Look Like Without JavaScript?</h2>
+        <p class="post-text">Without JavaScript, all you would have on the web would be HTML and CSS. These alone limit you to a few web page implementations. 90% (if not more) of your webpages would be static, and you'd only have the dynamic changes like animations that CSS provides.</p>
+        <h2>How JavaScript Makes Things Dynamic?</h2>
+        <p class="post-text">HTML defines the structure of your web document and the content therein. CSS declares various styles for the contents provided on the web document.</p>
+        <p class="post-text">HTML and CSS are often called markup languages rather than programming languages, because they, at their core, provide markups for documents with very little dynamism.</p>
+        <p class="post-text">JavaScript, on the other hand, is a dynamic programming language that supports Math calculations, allows you to dynamically add HTML contents to the DOM, creates dynamic style declarations, fetches contents from another website, and lots more.</p>
+        <p class="post-text">JavaScript can do a lot more than what I can cover in this article. But to get you started with JS, we'll look at:</p>
+        <ul class="list">
+            <li>>> how to use JavaScript in HTML</li>
+            <li>>> data types</li>
+            <li>>> variables</li>
+            <li>>> comments</li>
+            <li>>> functions</li>
+        </ul>
+        <h2>How to Use JavaScript in HTML</h2>
+        <p class="post-text">Just like with CSS, JavaScript can be used in HTML in various ways, such as:</p>
+        <h1>1. Inline JavaScript</h1>
+        <p class="post-text">Here, you have the JavaScript code in HTML tags in some special JS-based attributes.</p>
+        <p class="post-text">For example, HTML tags have event attributes that allow you to execute some code inline when an event is triggered. Here's what I mean:</p>
+        <div>
+            <pre class="code">
+                <p>button onclick="alert('You just clicked a button')">Click me!</button></p>
+            </pre>
+        </div>
+        <p class="post-text">This is an example of inline JavaScript. The value of <b>onclick</b> can be some Match calculation, a dynamic addition to the DOM – any syntax-valid JavaScript code.</p>
+        <h1>2. Internal JavaScript, with the script tag</h1>
+        <p class="post-text">Just like the style tag for style declarations within an HTML page, the script tag exists for JavaScript. Here's how it's used:</p>
+        <div>
+            <pre class="code">
+                <p> 
+                script>
+                    function(){
+                        alert("I am inside a script tag")
+                    }
+                /script></p>
+            </pre>
+        </div>
+            <h1>3. External JavaScript</h1>
+        <p class="post-text">You may want to have your JavaScript code in a different file. External JavaScript allows this. For such uses-cases, here's how it's done:</p>
+        <pre class="code">
+            <p>!-- index.html -->
+                script src="./script.js">/script></p>
+        </pre>
+        <pre class="code">
+            <p>// script.js
+                alert("I am inside an external file");</p>
+        </pre>
+       <p class="post-text">The src attribute of the script tag allows you to apply a source for the JavaScript code. That reference is important because it notifies the browser to also fetch the content of script.js.</p>
+       <p class="post-text">script.js can be in the same directory with index.html, or it can be gotten from another website. For the latter, you'll need to pass the full URL (https://.../script.js).</p>
+       <p class="post-text">Notice the .js extension? That's the extension for JavaScript files, just like HTML has .html.</p>
+       <p class="post-text">Now that we've looked at ways to apply JavaScript to our HTML, let's look at some of the features of JavaScript.</p>
+       <h1>Data Types in JavaScript</h1>
+       <p class="post-text">In JavaScript, data has to be of one type or another. JavaScript needs to know this so that it knows how to use it with other data or how to operate on such data.</p>
+       <p class="post-text"><strong>Here are the basic data types that JavaScript supports:</strong></p>
+       <p class="post-text">>> Number (for example, 6, 7, 8.9): on which you can apply arithmetic operations (like addition) and many more</p>
+       <p class="post-text">>> String (like "javascript", 'a long sentence', a short paragraph): anything found between single quotes ('...'), double quotes ("...") and backticks (...). There's no difference between single and double quotes, but backticks have more features, such as:</p>
+       <p class="post-text">>> interpolating variables in strings, like so: My name is ${name}. name here is a variable, injected into the string.</p>
+       <p class="post-text">>> multiline strings. With normal quotes, you'd need to add escape characters like \n for a newline, but backticks allow you to continue your string on another line, like so:</p>
+            <pre class="code">
+                <p>let str = `I am a
+                    multiline string`;</p>
+            </pre>
+    
+            <p class="post-text">>>  Boolean (can only be of two values: true or false): more like yes (true) or no (false)</p>
+            <p class="post-text">>>  Array (for example, [1, 2, "hello", false]): a group of data (which can be of any type, including arrays) separated by a comma. Indexing starts from 0. Accessing the content of such a group can be like so: array[0], which for this example will return 1, since it's the first item.</p>
+            <p class="post-text">>>  Object (for example {name: 'javascript', age: 5}): also a group of data but in the form of a key:value pair. The key has to be a string, and the value can be any type including another object. Accessing the content of the group is done with the key, for example obj.age or obj["age"] will return 5.</p>
+            <p class="post-text">>>  Undefined (the only data this type supports is undefined): This data can be assigned to a variable explicitly, or implicitly (by JavaScript) if a variable has been declared but not assigned a value. Later in this article, we'll look at variable declaration and value assignment.</p>
+            <p class="post-text">>> Null (the only data this type supports is null): Null means there is no value. It holds a value, but not a real value – rather, null.</p>
+            <p class="post-text">>>  Function (for example, function(){ console.log("function") }): A function is a data type that invokes a block of code when called. More on functions later in this article.</p>
+        <p class="post-text">JavaScript data types can be a bit complicated to understand. You may have heard that arrays and functions are also objects, and that's true.</p>
+        <h1>Variables in JavaScript</h1>
+            <p class="post-text">Variables are containers for values of any data type. They hold values such that when the variables are used, JavaScript uses the value they represent for that operation.</p>
+            <p class="post-text">Variables can be declared and can be assigned a value. When you declare a variable, you're doing this:</p>
+                <pre class="code">
+                    <p>let name;</p>
+                </pre>
+            <p class="post-text">For the above, <strong>name</strong> has been declared, but it doesn't have a value yet.</p>
+            <p class="post-text">As you'd expect from the data types section, JavaScript automatically assigns a value of <B>undefined</B> to <B>name</B>. So if you try to use <B>name</B> anywhere, <B>undefined</B> will be used for that operation.</p>
+            <p class="post-text">Here's what it means to assign a value to a variable:</p>
+            <pre class="code">
+                <p>let name;
+    name = "JavaScript";</p>
+            </pre>
+            <p class="post-text">Now if you use <b>name</b>, it will represent <b>JavaScript</b>.</p>
+            <p class="post-text">Declarations and assignments can be done on one line like so:</p>
+            <pre class="code">
+                <p>let name = "JavaScript";</p>
+            </pre>
+            <p class="post-text">Why <b>let</b>? you may have asked yourself, and here's why: JavaScript supports three methods of variable declarations, which are:   </p>
+            <p class="post-text">>> the var operator: this has been with JavaScript since its inception. You can declare variables and assign values to them which can be changed later in the code. Here's what I mean:</p>
+            <pre class="code">
+                <p>var name = "JavaScript";
+    name = "Language";</p>
+            </pre>
+            <p class="post-text">the let operator: this is also very similar to var – it declares and assigns values to variables that can be changed later in the code. The major difference between these operators is that var hoists such variables, while let does not hoist. The concept of hoisting can be explained briefly with the following code:</p>
+            <pre class="code">
+                <p>function print() {
+                    console.log(name);
+                    console.log(age);
+                    var name = "JavaScript";
+                    let age = 5;
+                }
+                
+                print();</p>
+            </pre>
+            <p class="post-text">Hoist problems can happen unexpectedly, and that's why you should use <b>let</b> instead of  <b>var</b>.</p>
+            <p class="post-text">>> the <b>const</b> operator: this also does not hoist variables, but it does one more thing: it ensures that a variable cannot be assigned another value other than what it was assigned during initialization.</p>
+        <p class="post-text"><strong>For example:</strong></p>
+        <pre class="code">
+            <p>let name = "JavaScript"
+                name = "Language" // no errors
+                
+                const age = 5
+                age = 6 // error, cannot reassign variable
+                </p>
+        </pre>
+    </section>
+    <!-----Lesson File-->
+    <h2 class="lesson">Here is The Lesson</h2>
+    <img src="img/project-5.jpg" alt="" class="post-pic">
+    <a href="JavaScript/javascript_tutorial.pdf" class="down">Click Here to Download</a>
+    <!-- Share -->
+    <div class="share post-container">
+        <span class="share-title">Share this article</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; ASURA 2022 All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

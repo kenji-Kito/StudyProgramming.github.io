@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="#" class="logo">Asu<span>ra</span></a>
+        <!-- Login Btn -->
+        <a href="sign-up.html" class="login">Login</a>
+    </div>
+
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">The Programming Blog</h2>
+            <span class="home-subtitle">Your source of great content</span>
+        </div>
+    </section>
+   <section class="Chapter">
+       <h2>Python Escape Character Sequences (Examples)</h2>
+       <p class="post-text1">
+        Escape characters or sequences are illegal characters for Python and never get printed as part of the output. When backslash is used in Python programming, it allows the program to escape the next characters.
+       </p>
+       <p class="post-text1">Following would be the syntax for an escape sequence</p>
+       <p class="post-text1"><strong>Syntax :</strong></p>
+       <div>
+        <pre class="code">
+            <p>
+                \Escape character
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">Here, the escape character could be t, n, e, or backslash itself.</p>
+       <h2>Types of Escape Sequence</h2>
+       <p class="post-text1">Escape characters can be classified as non-printable characters when backslash precedes them. The print statements do not print escape characters.</p>
+       <p class="post-text1">Here is a list of Escape Characters</p>
+       <table>
+        <tbody>
+            <tr>
+                <th>Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>\'</td>
+                <td>Single quotation</td>
+            </tr>
+            <tr>
+                <td>\\</td>
+                <td>backslash</td>
+            </tr>
+            <tr>
+                <td>\n</td>
+                <td>	New Line</td>
+            </tr>
+            <tr>
+                <td>\r</td>
+                <td>	Carriage return</td>
+            </tr>
+            <tr>
+                <td>\t</td>
+                <td>	Tab</td>
+            </tr>
+            <tr>
+                <td>\b</td>
+                <td>	Backspace</td>
+            </tr>
+            <tr>
+                <td>\f</td>
+                <td>	Form feed</td>
+            </tr>
+            <tr>
+                <td>\ooo</td>
+                <td>	Octal equivalent</td>
+            </tr>
+            <tr>
+                <td>\xhhh</td>
+                <td>Hexadecimal equivalent</td>
+            </tr>
+        </tbody>
+       </table>
+       <h2>Example Usage of Various Escape Characters</h2>
+       <table>
+        <tbody>
+            <tr>
+                <th>Escape character</th>
+                <th>Function</th>
+                <th>Example Code</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>\n</td>
+                <td>The new line character helps the programmer to insert a new line before or after a string.</td>
+                <td>txt = “Asura\n99!”
+                    print(txt)</td>
+                <td>Asura99</td>
+            </tr>
+            <tr>
+                <td>\\</td>
+                <td>This escape sequence allows the programmer to insert a backslash into the Python output.</td>
+                <td>txt = “Asura\\99!”
+                    print(txt)</td>
+                <td>Asura\99</td>
+            </tr>
+            <tr>
+                <td>\xhh</td>
+                <td>Use a backslash followed by a hexadecimal number.
+                    This is done by printing in backslash with the hexadecimal equivalent in double quotes.</td>
+                <td>txt = “\x47\x75\x72\x75” + “99!”
+                    print(txt)</td>
+                <td>Asura99!</td>
+            </tr>
+            <tr>
+                <td>\ooo</td>
+                <td>To get the integer value of an octal value, provide a backslash followed by ooo or octal number in double-quotes.
+                    It is done by printing in a backslash with three octal equivalents in double quotes.</td>
+                <td>txt = ‘\107\125\122\125’+ “99!”
+                    print(txt)</td>
+                <td>ASURA99!</td>
+            </tr>
+            <tr>
+                <td>\b</td>
+                <td>	This escape sequence provides backspace to the Python string. It is inserted by adding a backslash followed by “b”.
+                    “b” here represents backslash.</td>
+                <td>txt = “Asura\b99!”
+                    print(txt)</td>
+                <td>Asura99!</td>
+            </tr>
+            <tr>
+                <td>\f</td>
+                <td>It helps in the interpolation of literal strings</td>
+                <td>txt = “Asura\f99!”
+                    print(txt)</td>
+                <td>Asura99!</td>
+            </tr>
+            <tr>
+                <td>\r</td>
+                <td>	It helps you to create a raw string.</td>
+                <td>	txt = “Asura\r99!”
+                    print(txt)</td>
+                <td>Asura99!</td>
+            </tr>
+            <tr>
+                <td>\’</td>
+                <td>It helps you to add a single quotation to string</td>
+                <td>txt = “Asura\’99!”
+                    print(txt)</td>
+                <td>Asura'99!</td>
+            </tr>
+        </tbody>
+       </table>
+       <h2>What Does “\t” Do in Python?</h2>
+       <p class="post-text1">The t alphabet in Python represents a space. It enables you to insert space or tab between strings in a code. It helps us to have space in the Python program when there is a need for it. To eliminate the usage of keyboard space, the coders utilize tab escape sequences.</p>
+       <p class="post-text1">Following is the syntax for a tab escape sequence.</p>
+       <p class="post-text1"><strong>Syntax:</strong></p>
+       <div>
+        <pre class="code">
+            <p>"\t"</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Example:</strong></p>
+       <p class="post-text1">In this example, the string used is “Asura169”. The program will put a tab or a space between Asura and 169.</p>
+       <p class="post-text1"><Strong>Python Code:</Strong></p>
+       <div>
+        <pre class="code">
+            <p> TextExample="Asura\t169"
+                print (TextExample)
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output :</strong></p>
+       <div>
+        <pre class="code">
+            <p>Asura 169</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <P class="post-text1">In the above example, instead of adding space using a keyboard, the program helps us by putting a space or a tab between the string “Asura169”. It also provides a space at the precise location where the escape sequence is added.</P>
+       <h2>When to use “\t” in Python?</h2>
+       <p class="post-text1">The escape sequence tab is utilized to put a horizontal tab between words and hence helps manipulate python strings. However, If the escape sequence tab is not used, the programmer has to manually add a space between every word of the string.</p>
+       <p class="post-text1">You can transform it into a time-consuming exercise. Moreover, the space added between different keywords may or may not be precise in its placement.</p>
+       <p class="posy-text1">Here is an example that displays the manual addition of a space between words and the use of an escape sequence between words.</p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>print("Manually Added  space in string Asura   169")
+                TextExample="Use\tof\ttab\tto\tadd\tspace\tAsura\t169"
+                print(TextExample)</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output :</strong></p>
+       <div>
+            <pre class="code">
+                <p>Manually Added space in string Asura   169
+                    Use	of	tab	to	add	space	Asura    169</p>
+            </pre>
+       </div>
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The programmer manually added space between words in the above code, so the placement was not precise. When the escape sequence tab was applied, the program automatically provided the precise location of space between words.</p>
+       <h2>Application of built-in function Chr () and Ord ()</h2>
+       <p class="post-text1">The Chr () function is a built function that takes a single argument as input. The function takes Unicode characters as an input which ranges from 0 to 1,114 and 111, respectively. The function can be used as the substitute for escape sequence “\t” to put a space between two words.</p>
+       <p class="post-text1">The syntax for the Chr function is represented below: –</p>
+       <p class="post-text1"><strong>Syntax: –</strong></p>
+       <div>
+        <pre class="code">
+            <p>Chr(Unicode character)</p>
+        </pre>
+       </div>
+       <p class="post-text1">The tab has the Unicode character 9. Use the following Python command to arrive at the Unicode character as shown below: –</p>
+       <p class="post-text1"><strong>Python Code:</strong></p>
+       <div>
+        <pre class="code">
+            <p>
+            print("Unicode character of the tab is")
+            Ord=ord('\t')
+            print(Ord)
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output :</strong></p>
+       <div>
+        <pre class="code">
+            <p>Unicode character of the tab is 9</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Explanation:</strong></p>
+       <p class="post-text1">The above code provides the Unicode character for the tab. It can be used as an input for the Chr function. Use of Chr (9) would allow us to create a substitute for a tab escape sequence.</p>
+       <p class="post-text1">This code is an example of how to use Chr (9), as shown below:</p>
+       <p class="post-text1"><strong>Python Code :</strong></p>
+       <div>
+        <pre class="code">
+            <p>
+                TextExample="Asura+chr(9)+169"
+                    print(TextExample)
+            </p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>Output :</strong></p>
+       <div>
+        <pre class="code">
+            <p>Asura	169</p>
+        </pre>
+       </div>
+       <p class="post-text1"><strong>The above function, however, is deprecated for version 3 and above.</strong></p>
+    </section>
+    
+   <div class="share post-container">
+    <span class="share-title">Share this article</span>
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+    
+</div>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; ASURA 2022 All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
