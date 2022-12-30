@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+
+}
+body p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5px;
+}
+.container{
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    color: aqua;
+}
+#countdown h2{
+    color: #fff;
+    padding-top: 5%;
+}
+#countdown p{
+    
+    color: #fff;
+}
+.countdown{
+    display: flex;
+    flex-basis: 100px;
+}
+.countdown div p{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: -14px;
+    
+}
+.countdown div span{
+    font-size: 40px;
+    color: #fff;
+    padding: 20px;
+}
+
+.emoji{
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span{
+    align-items: center;
+    font-size: 4rem;
+    padding: 0 .5rem;
+    color: #fff;
+}
+.emoji p{
+    text-align: right;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
