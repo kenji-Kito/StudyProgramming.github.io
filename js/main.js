@@ -1,26 +1,15 @@
-// Filter Js
-$(document).ready(function () {
-  $(".filter-item").click(function () {
-    const value = $(this).attr("data-filter");
-    if (value == "all") {
-      $(".post-box").show("1000");
-    } else {
-      $(".post-box")
-        .not("." + value)
-        .hide("1000");
-      $(".post-box")
-        .filter("." + value)
-        .show("1000");
-    }
-  });
-  // Add active to btn
-  $(".filter-item").click(function () {
-    $(this).addClass("active-filter").siblings().removeClass("active-filter");
-  });
-});
-// Header BackGround Change On Scroll
-let header = document.querySelector("header");
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
 
-window.addEventListener("scroll", () => {
-  header.classList.toggle("shadow", window.scrollY > 0);
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }else{
+        body.style.background = 'black';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }
 });
